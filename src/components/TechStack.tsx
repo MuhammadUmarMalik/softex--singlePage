@@ -15,7 +15,7 @@ function TechStack() {
     <React.Fragment>
       <section
         id="tech-stack"
-        className="px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 py-10"
+        className="px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 py-16"
       >
         {/* Header */}
         <div className="text-center mb-12">

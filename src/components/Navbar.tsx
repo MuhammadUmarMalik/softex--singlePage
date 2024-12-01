@@ -12,13 +12,12 @@ const Navbar: React.FC = () => {
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
-    setIsOpen(false); // Close the menu after clicking
+    setIsOpen(false);
   }, []);
 
   return (
     <nav className="px-12 top-0 w-full z-10">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        {/* Logo */}
         <div
           className="text-purple-800 text-2xl font-bold cursor-pointer"
           onClick={() => scrollToSection("hero")}
@@ -28,7 +27,6 @@ const Navbar: React.FC = () => {
           Softex
         </div>
 
-        {/* Hamburger Icon for Mobile */}
         <button
           className="md:hidden text-purple-800 focus:outline-none"
           onClick={toggleMenu}
@@ -50,7 +48,6 @@ const Navbar: React.FC = () => {
           </svg>
         </button>
 
-        {/* Navigation Links */}
         <div
           className={`${
             isOpen ? "block" : "hidden"
@@ -60,7 +57,7 @@ const Navbar: React.FC = () => {
             { id: "hero", label: "Home" },
             { id: "about", label: "About" },
             { id: "projects", label: "Projects" },
-            { id: "contact", label: "Contact" },
+            { id: "services", label: "Services" },
           ].map((item) => (
             <button
               key={item.id}

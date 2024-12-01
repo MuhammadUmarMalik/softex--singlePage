@@ -1,8 +1,7 @@
-import React from "react";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Projects from "./Projects";
-import Footer from "./Footer";
+import Services from "./Services";
 import About from "./About";
 // import Contact from "./Contact";
 
@@ -20,6 +19,9 @@ const App = () => {
       </section>
       <section id="projects" className="py-16">
         <Projects />
+      </section>
+      <section id="services" className="py-16">
+        <Services />
       </section>
     </div>
   );

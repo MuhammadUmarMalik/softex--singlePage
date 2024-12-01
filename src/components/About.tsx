@@ -6,13 +6,12 @@ function About() {
     <React.Fragment>
       <section
         id="about"
-        className="px-6 md:flex-col sm:flex-col  sm:px-16 md:px-20 lg:px-16 xl:px-16 py-4 bg-purple-600 flex flex-col items-center"
+        className="px-6 md:flex-col sm:flex-col  sm:px-16 md:px-20 lg:px-16 xl:px-16 py-16 bg-purple-600 flex flex-col items-center"
       >
         <h2 className="text-xl sm:text-4xl md:text-3xl lg:text-6xl font-bold text-white text-center md:text-left">
           About Me
         </h2>
 
-        {/* Grid Container */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-4 sm:gap-16 mt-8 w-full">
           {/* Left Section */}
           <div className="text-center sm:text-left justify-center">
