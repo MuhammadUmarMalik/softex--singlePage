@@ -1,25 +1,42 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useCallback } from "react";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleMenu = useCallback(() => {
+    setIsOpen((prevState) => !prevState);
+  }, []);
+
+  const scrollToSection = useCallback((id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsOpen(false); // Close the menu after clicking
+  }, []);
 
   return (
-    <nav className="bg-white mx-16">
-      <div className="container mx-3.5 flex justify-between items-center p-4">
-        {/* Logo Section */}
-        <div className="text-purple-800 text-2xl font-bold">
-          <Link to="/">Softex</Link>
+    <nav className="px-12 top-0 w-full z-10">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        {/* Logo */}
+        <div
+          className="text-purple-800 text-2xl font-bold cursor-pointer"
+          onClick={() => scrollToSection("hero")}
+          role="button"
+          aria-label="Navigate to Home"
+        >
+          Softex
         </div>
 
-        <button className="block md:hidden text-black" onClick={toggleMenu}>
+        {/* Hamburger Icon for Mobile */}
+        <button
+          className="md:hidden text-purple-800 focus:outline-none"
+          onClick={toggleMenu}
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-6 w-6 transition-transform transform duration-300"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -33,41 +50,27 @@ const Navbar = () => {
           </svg>
         </button>
 
+        {/* Navigation Links */}
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } bg-white absolute top-16 left-0 w-full md:relative md:top-0 md:flex md:w-auto md:space-x-4`}
+          } md:flex md:items-center space-y-4 md:space-y-0 md:space-x-8 absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent p-4 md:p-0 transition-all duration-300`}
         >
-          <Link
-            className="block text-black hover:text-purple-600 py-2 px-4 md:inline-block font-medium"
-            to="/"
-          >
-            Home
-          </Link>
-          <Link
-            className="block text-black hover:text-purple-600 py-2 px-4 md:inline-block font-medium"
-            to="/about"
-          >
-            About
-          </Link>
-          <Link
-            className="block text-black hover:text-purple-600 py-2 px-4 md:inline-block font-medium"
-            to="/services"
-          >
-            Services
-          </Link>
-          <Link
-            className="block text-black hover:text-purple-600 py-2 px-4 md:inline-block font-medium"
-            to="/portfolio"
-          >
-            Portfolio
-          </Link>
-          <Link
-            className="block text-black hover:text-purple-600 py-2 px-4 md:inline-block font-medium"
-            to="/contact"
-          >
-            Contact
-          </Link>
+          {[
+            { id: "hero", label: "Home" },
+            { id: "about", label: "About" },
+            { id: "projects", label: "Projects" },
+            { id: "contact", label: "Contact" },
+          ].map((item) => (
+            <button
+              key={item.id}
+              className="block text-gray-800 hover:text-purple-600 transition duration-300 py-2 px-4 font-medium md:py-0"
+              onClick={() => scrollToSection(item.id)}
+              aria-label={`Navigate to ${item.label}`}
+            >
+              {item.label}
+            </button>
+          ))}
         </div>
       </div>
     </nav>

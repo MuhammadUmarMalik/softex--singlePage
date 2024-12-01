@@ -1,13 +1,13 @@
 import React from "react";
+import TechStack from "./TechStack";
 
 function About() {
   return (
     <React.Fragment>
       <section
         id="about"
-        className="px-6 md:flex-col sm:flex-col lg- sm:px-16 md:px-20 lg:px-16 xl:px-16 py-8 bg-purple-600 flex flex-col items-center"
+        className="px-6 md:flex-col sm:flex-col  sm:px-16 md:px-20 lg:px-16 xl:px-16 py-4 bg-purple-600 flex flex-col items-center"
       >
-        {/* Heading */}
         <h2 className="text-xl sm:text-4xl md:text-3xl lg:text-6xl font-bold text-white text-center md:text-left">
           About Me
         </h2>
@@ -77,6 +77,7 @@ function About() {
           </div>
         </div>
       </section>
+      <TechStack />
     </React.Fragment>
   );
 }

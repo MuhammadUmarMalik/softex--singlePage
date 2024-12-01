@@ -8,7 +8,7 @@ import Testimonials from "../components/Testimonials";
 
 function Home() {
   return (
-    <div className="w-auto justify-center align-middle">
+    <div className="bg-white w-auto justify-center align-middle">
       <Hero />
       <About />
       <TechStack />

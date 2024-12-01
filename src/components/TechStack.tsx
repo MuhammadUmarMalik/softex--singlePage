@@ -15,7 +15,7 @@ function TechStack() {
     <React.Fragment>
       <section
         id="tech-stack"
-        className="px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 py-20"
+        className="px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 py-10"
       >
         {/* Header */}
         <div className="text-center mb-12">
@@ -79,7 +79,6 @@ function TechStack() {
             alt="React Native"
             className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 transition-transform hover:scale-110"
           />
-          {/* Add more icons here if needed */}
         </div>
       </section>
     </React.Fragment>
