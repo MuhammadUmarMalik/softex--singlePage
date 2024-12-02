@@ -10,14 +10,14 @@ function Hero() {
       >
         {/* Text Section */}
         <div className="text-center lg:text-left lg:w-1/2">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-800">
+          <h1 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold text-gray-800">
             Hi, I'm M.Umar Malik
           </h1>
           <h2 className="text-lg md:text-xl lg:text-2xl text-gray-600 mt-4">
             Back-end & Mobile Developer
           </h2>
           <p className="text-gray-500 mt-6 md:mt-8 lg:text-lg xl:text-xl">
-Passionate backend and mobile app developer specializing in creating scalable APIs, robust server-side architectures, and intuitive mobile applications that deliver seamless user experiences.
+            Passionate backend and mobile app developer specializing in creating scalable APIs, robust server-side architectures, and intuitive mobile applications that deliver seamless user experiences.
           </p>
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-6">
             <a
