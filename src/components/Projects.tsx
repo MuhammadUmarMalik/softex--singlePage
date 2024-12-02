@@ -8,7 +8,7 @@ const Projects: React.FC = () => {
       title: "Blood Stream",
       description:
         "A full-stack Blood Donation with user authentication, Donation management, Search User in 3Km Radius and Real Time Chat integration.",
-      image: "./public/assets/BloodStream.jpg",
+      image: "/assets/BloodStream.jpg",
       tags: ["React Native", "Node.js", "MYSQL", "Socket.io"],
       visitLink: "https://github.com/MuhammadUmarMalik/Blood_Stream_BE.git",
       usecase:
@@ -19,7 +19,7 @@ const Projects: React.FC = () => {
       title: "Adhuri Cart",
       description:
         "A Ecommerce Scalable Backend with following Features such as CURD operation, payment gateway integration (Stripe,Jazzcash,Easyasia)",
-      image: "./public/assets/EcommerceWeb.jpg",
+      image: "assets/EcommerceWeb.jpg",
       tags: ["Node.js", "PostgreSQL", "TypeORM", "Adonis.js"],
       visitLink: "https://github.com/MuhammadUmarMalik/api.udaricrafts.git",
       usecase:
@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
       title: "Knowledge Exchange",
       description:
         "A web app using Node.js, React.js, and MongoDB for textbook transactions and teacher-student connections, and scheduling to foster a collaborative learning community.",
-      image: "./public/assets/Knowledge.jpg",
+      image: "assets/Knowledge.jpg",
       tags: ["React.js", "Node.js", "Adonis.js", "TypeORM", "Firebase"],
       visitLink:
         "https://github.com/MuhammadUmarMalik/Knowledge-Exchange-Frontend.git",
