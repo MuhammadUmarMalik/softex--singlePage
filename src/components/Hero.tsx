@@ -17,8 +17,7 @@ function Hero() {
             Back-end & Mobile Developer
           </h2>
           <p className="text-gray-500 mt-6 md:mt-8 lg:text-lg xl:text-xl">
-            Lorem ipsum dolor sit amet consectetur. Ligula nunc non commodo
-            scelerisque gravida.
+Passionate backend and mobile app developer specializing in creating scalable APIs, robust server-side architectures, and intuitive mobile applications that deliver seamless user experiences.
           </p>
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-6">
             <a
