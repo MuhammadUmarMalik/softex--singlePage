@@ -2,7 +2,7 @@ import BloodStream from "./assets/BloodStream.jpg";
 import EcommerceWeb from "./assets/EcommerceWeb.jpg";
 import Knowledge from "./assets/Knowledge.jpg";
 
-[
+export const projects=[
   {
     "id": 1,
     "title": "Blood Stream",
