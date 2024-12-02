@@ -1,14 +1,14 @@
 import React from "react";
-import CProgramming from "../assets/images/C Programming.png";
-import CPlus from "../assets/images/C++.png";
-import CSS3Icon from "../assets/images/CSS3.png";
-import HTMLIcon from "../assets/images/Html 5.png";
-import JavaScriptIcon from "../assets/images/JavaScript.png";
-import Express from "../assets/images/Express Js.png";
-import Node from "../assets/images/Nodejs.png";
-import ReactNative from "../assets/images/React Native.png";
-import Github from "../assets/images/GitHub.png";
-import Git from "../assets/images/Git.png";
+import CProgramming from "../assets/C Programming.png";
+import CPlus from "../assets/C++.png";
+import CSS3Icon from "../assets/CSS3.png";
+import HTMLIcon from "../assets/Html 5.png";
+import JavaScriptIcon from "../assets/JavaScript.png";
+import Express from "../assets/Express Js.png";
+import Node from "../assets/Nodejs.png";
+import ReactNative from "../assets/React Native.png";
+import Github from "../assets/GitHub.png";
+import Git from "../assets/Git.png";
 
 function TechStack() {
   return (
