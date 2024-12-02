@@ -8,7 +8,7 @@ const Projects: React.FC = () => {
       title: "Blood Stream",
       description:
         "A full-stack Blood Donation with user authentication, Donation management, Search User in 3Km Radius and Real Time Chat integration.",
-      image: "/assets/BloodStream.jpg",
+      image: "assets/BloodStream.jpg",
       tags: ["React Native", "Node.js", "MYSQL", "Socket.io"],
       visitLink: "https://github.com/MuhammadUmarMalik/Blood_Stream_BE.git",
       usecase:
